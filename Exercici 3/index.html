@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>M6 - Exercici 3</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/propies/Logo.svg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Scripts finestres modals-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+        <!-- Menu-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/propies/Logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <form class="form-inline m-auto" style="text-align: center; display: flex;">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">🔍</button>
+                </form>
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Inici</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destacats">Destacats</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="ml-0" style="display: flex; flex-direction: row;">
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" style="padding-right: 20px;" href="#" data-toggle="modal" data-target="#compra"><i class="fas fa-shopping-cart"></i></a>                
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#login"><i class="fas fa-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Capçalera-->
+        <header class="masthead">
+            <div class="mhfilter">
+                <div class="container">
+                    <div class="masthead-subheading">A la mida dels teus somnis</div>
+                    <div class="masthead-heading text-uppercase">Mobles AEKI</div>
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Descobreix-los</a>
+                </div>
+            </div>
+        </header>
+        <!-- Categories-->
+        <section class="page-section" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Categories</h2>
+                    <h3 class="section-subheading text-muted">Personalitza cada racó de la casa</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/bany.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Bany</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/cuina.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Cuina</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/dormitori.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Dormitori</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/exterior.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Exterior</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/despatx.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Despatx</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/saladestar.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sala d'estar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 7-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/rebedor.jpg" alt="Rebedor" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Rebedor</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 8-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/canviador.jpg" alt="Canviador" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Canviador</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 9-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/propies/gamer.jpg" alt="Sala gamer" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sala gamer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Destacats-->
+        <section class="page-section" id="destacats">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Destacats</h2>
+                    <h3 class="section-subheading text-muted">Estigues a la última amb els productes més demandats</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span>
+                            <img class="destacat-img" src="assets/img/propies/cadira.png" />
+                        </span>
+                        <h4 class="my-3">Cadires Senthat</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span>
+                            <img class="destacat-img" src="assets/img/propies/moble.png" />
+                        </span>
+                        <h4 class="my-3">Moble Hesblank</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span>
+                            <img class="destacat-img" src="assets/img/propies/lavabo.png" />
+                        </span>
+                        <h4 class="my-3">Lavabo Pikkä</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacte-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contacta'ns</h2>
+                    <h3 class="section-subheading text-warning">Ens posarem en contacte amb tu el més aviat possible</h3>
+                </div>
+                <form id="contactForm">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Nom" required="required" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Correu" required="required" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Assumpte" required="required" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Missatge" required="required"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Drets reservats <a href="#">Mobles Aeki</a>.
+                    </div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-light text-decoration-none me-3" href="#!">Política de privacitat</a>
+                        <a class="link-light text-decoration-none" href="#!">Condicions d'ús</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modals Propies-->
+        <!-- Compra -->
+        <div class="portfolio-modal modal fade" id="compra" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" class="close" data-dismiss="modal" aria-label="Close" />
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Finestra modal de COMPRA</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Enlloc de registre, que potser el posaria com a opció dins del modal d'identificació, afegeixo el model de carret de compra per qui vulgui veure els productes de la seva cistella</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Login -->
+        <div class="portfolio-modal modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" class="close" data-dismiss="modal" aria-label="Close" />
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">IDENTIFICACIÓ</h5>
+                                    </div>
+                                    <div class="modal-body" style="justify-content: center;">
+                                        <p style="margin-bottom:0;">Usuari: </p><input type="text" />
+                                        <p style="margin-bottom:0; margin-top: 10px;">Contrassenya: </p><input type="password" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Registra't</button>
+                                        <button type="button" class="btn btn-primary">Entra</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

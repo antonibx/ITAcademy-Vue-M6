@@ -1,0 +1,22 @@
+.row {
+  width: 100vw;
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+p                         {background-color: lightgoldenrodyellow;}
+.text-light, .text-white  {background-color: darkslategray;}
+
+#propis > .text-primary   {color: orange        !important;}
+#propis > .text-secondary {color: mediumpurple  !important;}
+#propis > .text-success   {color: yellowgreen   !important;}
+#propis > .text-danger    {color: tomato        !important;}
+#propis > .text-warning   {color: goldenrod     !important;}
+#propis > .text-info      {color: steelblue     !important;}
+#propis > .text-light     {color: gold          !important;}
+#propis > .text-dark      {color: teal          !important;}
+#propis > .text-muted     {color: cadetblue     !important;}
+#propis > .text-white     {color: lightgray     !important;}

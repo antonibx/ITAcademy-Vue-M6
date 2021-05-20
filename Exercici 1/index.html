@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="static/assets/bootstrap-4.6.0/css/bootstrap.css">
+    <link rel="stylesheet" href="static/assets/fontawesome-5.15.2/css/all.css">
+    <link rel="stylesheet" href="static/css/categories.css">
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- TITLE I FAVICON-->
+    <link rel="icon" href="static/images/cadira.png">
+    <title>M6 - Exercici 1</title>
+</head>
+<body>
+<!-- Header -->
+    <header class="container-luid">
+        <!-- Menú -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-warning" href="#">AEKI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                <form class="form-inline m-auto" style="text-align: center;">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">🔍</button>
+                </form>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#capçalera">Inici <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destacats">Destacats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacte</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-0" style="display: flex; flex-direction: row;">
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" style="padding-right: 20px;" href="#" data-toggle="modal" data-target="#compra"><i class="fas fa-shopping-cart"></i></a>                
+                            <!-- Finestra Modal -->
+                            <div class="modal fade" id="compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Finestra modal de COMPRA</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Enlloc de registre, que potser el posaria com a opció dins del modal d'identificació, afegeixo el model de carret de compra per qui vulgui veure els productes de la seva cistella</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#login"><i class="fas fa-user"></i></a>
+                            <!-- Finestra Modal -->
+                            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content" style="width: fit-content;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">IDENTIFICACIÓ</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body" style="justify-content: center;">
+                                            <p style="margin-bottom:0;">Usuari: </p><input type="text" />
+                                            <p style="margin-bottom:0; margin-top: 10px;">Contrassenya: </p><input type="password" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Registra't</button>
+                                            <button type="button" class="btn btn-primary">Entra</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Capçalera -->
+        <section id="capçalera">
+            <div class="jumbotron text-white">
+                <div id="innerjumbo">
+                    <h1 class="display-3">Mobles AEKI</h1>
+                    <p class="lead">Fem mobles a la mida dels teus somnis</p>
+                    <hr class="my-2">
+                    <p>La casa que buscaves és aquí</p>
+                    <p class="lead">
+                    <a class="btn btn-warning btn-lg" href="#!" role="button">Descobreix-la</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </header>
+<!-- Principal -->
+    <main>
+        <!-- Categories -->
+        <section id="categories" class="carousel slide" data-ride="carousel">
+            <h2 style="text-align: center;">Categories</h2>
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/canviador.jpg);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning" href="#!" role="button">Canviador</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/bany.png);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Bany</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/despatx.jpg);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Despatx</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/saladestar.jpg);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Sala d'estar</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/canviador.jpg);">
+                            </div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Dormitori</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/gamer.jpg);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Gamer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/cuina.jpg);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Cuina</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/exterior.png);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Exterior</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 categoria">
+                            <div class=" d-block categoria-img" style="background-image: url(static/images/rebedor.jpg);"></div>
+                            <div class="carousel-caption d-none d-block">
+                                <a class="btn btn-warning btn-lg" href="#!" role="button">Rebedor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Següent</span>
+            </a>
+        </section>
+
+        <!-- Destacats -->
+        <section id="destacats">
+            <h2 style="text-align: center; padding-bottom: 50px;">Productes destacats</h2>
+            <div class="row">
+                <div class="destacat col-lg-4">
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <img class="bd-placeholder-img rounded-circle" width="250" height="250" alt="servicio" src="static/images/cadira.png" role="img" aria-label="Cadira"/>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <h3 class="subtitulos">Cadires Senthat</h3>
+                        <p>Ideal pel teu saló!</p>
+                        <a class="btn btn-warning btn-md" href="#!" role="button">Aconsegueix-les &raquo;</a>
+                    </div>
+                </div>
+      
+                <div class="destacat col-lg-4">
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <img width="250" height="250" alt="servicio" src="static/images/moble.png" role="img" aria-label="Moble" />
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <h3 class="subtitulos">Moble Hesblank</h3>
+                        <p>Ideal pel teu rebedor</p>
+                        <a class="btn btn-warning btn-md" href="#!" role="button">Aconsegueix-lo &raquo;</a>
+                    </div>
+                </div>
+      
+                <div class="destacat col-lg-4">
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <img width="250" height="250" alt="servicio" src="static/images/lavabo.png" role="img" aria-label="Lavabo" />
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <h3 class="subtitulos">Lavabo Pikkä</h3>
+                        <p>Ideal pel teu bany</p>
+                        <a class="btn btn-warning btn-md" href="#!" role="button">Aconsegueix-lo &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacte -->
+        <section id="contacto">
+            <div class="row">
+                <div class="col-12 mb-4 col-lg-5">
+                    <div class="card border-warning rounded-0">
+                        <div class="card-header p-0">
+                            <div class="bg-warning text-black text-center py-2">
+                                <h3><i class="fa fa-envelope"></i> Contacta'ns</h3>
+                                <p class="m-0">Ens posarem en contacte amb tu el més aviat possible</p>
+                            </div>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="form-group">
+                                <label> Nom </label>
+                                <div class="input-group">
+                                    <input value="" type="text" name="data[name]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Correu</label>
+                                <div class="input-group mb-2 mb-sm-0">
+                                    <input type="email" value="" name="data[email]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Correu">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Assumpte</label>
+                                <div class="input-group mb-2 mb-sm-0">
+                                    <input type="text" value="" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Assumpte">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Missatge</label>
+                                <div class="input-group mb-2 mb-sm-0">
+                                    <textarea type="text" class="form-control" name="mesg"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                            <input type="submit" name="submit" value="ENVIAR" class="btn btn-warning btn-block rounded-0 py-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-7">
+                    <div class="mb-4">
+                        <iframe width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6819590023415!2d2.1922301154262693!3d41.402712779262856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33d3b71de05%3A0xbb83ff380d17f7fe!2sCibern%C3%A0rium%20-%20ITAcademy%20-%20Barcelona%20Activa!5e0!3m2!1sca!2ses!4v1621355479074!5m2!1sca!2ses"></iframe>
+                    </div>
+                    <div class="row text-center" id="iconescontacte">
+                        <div class="col-md-4">
+                            <a class="bg-warning px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
+                            <p class="text-white"> Roc Boronat, 117</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="bg-warning px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
+                            <p class="text-white">+34 93 291 76 10</p>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="bg-warning px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
+                            <p class="text-white"> vue@itacademy.cat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Mobles Aeki</h6>
+                    <p class="text-justify"> Mobles Aeki va néixer com una fusteria artesanal a Barcelona que amb els anys ha anat creixent fins al punt de ser un referent en la venta de mobles personalitzats a Catalunya. El nostre lema és: "si tu ho somnies, nosaltres ho fem realitat"</p>
+                </div>
+    
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/front-end-development/">Dormitori</a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">Bany</a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">Interior</a></li>
+                        <li><a href="http://scanfcode.com/category/android/">Exterior</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Mapa web</h6>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Inici</a></li>
+                        <li><a href="#proyectos">Categories</a></li>
+                        <li><a href="#empresas">Nosaltres</a></li>
+                        <li><a href="#contacto">Contacte</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 Drets reservats
+                        <a href="#">Mobles Aeki</a>.
+                    </p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><img src="static/images/facebook.png" alt="Facebook" width="40px"/></a></li>
+                        <li><a class="twitter" href="#"><img src="static/images/instagram.png" alt="Instagram" width="40px"/></a></li>
+                        <li><a class="instagram" href="#"><img src="static/images/twitter.png" alt="Twitter" width="40px"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
